@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: "Segoe UI", Arial;
-            background-color: #f5f7fa;
-            max-width: 900px;
+            background: linear-gradient(to right, #eef2f7, #f8fafc);
+            max-width: 1000px;
             margin: auto;
             padding: 20px;
             line-height: 1.6;
@@ -31,29 +31,69 @@
             margin: auto;
             border-radius: 50%;
             margin-bottom: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
         }
 
         .card {
             background: white;
             padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            transition: 0.3s;
+            margin-bottom: 25px;
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            animation: fadeIn 0.8s ease;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-6px);
         }
 
         h2 {
             color: #2c7be5;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         ul {
             padding-left: 20px;
+        }
+
+        /* 按钮 */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2c7be5;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1a5fd0;
+        }
+
+        /* 项目卡片 */
+        .project {
+            border: 1px solid #eee;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.02);
+        }
+
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* 动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px);}
+            to { opacity: 1; transform: translateY(0);}
         }
 
         .contact p {
@@ -64,7 +104,6 @@
 
 <body>
 
-    <!-- 头像（这里已经修复） -->
     <img src="15F96E48C0B60040EEA57857D950226D.jpg" class="avatar">
 
     <h1>王俊杰</h1>
@@ -79,50 +118,56 @@
     </section>
 
     <section class="card">
-        <h2>项目经历</h2>
-        <ul>
-            <li>完成医学影像数据清洗与标准化处理，采用数据增强方法扩充数据规模</li>
-            <li>参与RDAN-ResNet模型构建与参数调优，提升模型训练稳定性</li>
-            <li>设计10折交叉验证，对模型性能进行评估并输出分析报告</li>
-        </ul>
+        <h2>📄 简历下载</h2>
+        <div style="text-align:center;">
+            <a href="resume.pdf" download class="btn">下载我的简历</a>
+        </div>
     </section>
 
     <section class="card">
-        <h2>实习经历</h2>
+        <h2>🚀 项目经历</h2>
+
+        <div class="project">
+            <div class="project-title">阿尔茨海默症早期诊断系统</div>
+            <ul>
+                <li>医学影像数据处理与增强</li>
+                <li>RDAN-ResNet模型优化与调参</li>
+                <li>10折交叉验证评估模型性能</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="card">
+        <h2>💼 实习经历</h2>
         <p><strong>中国农业银行｜网络安全岗</strong></p>
         <ul>
-            <li>参与网络安全设备监控与异常日志分析</li>
-            <li>协助开展安全巡检与基础事件响应</li>
-        </ul>
-
-        <p><strong>中国农业银行｜大堂经理</strong></p>
-        <ul>
-            <li>参与网点客户分流与业务引导，保障业务流程顺畅运行</li>
-            <li>了解银行基层业务流程及岗位协作机制</li>
+            <li>参与网络安全监控与日志分析</li>
+            <li>协助安全巡检与事件响应</li>
         </ul>
     </section>
 
     <section class="card">
-        <h2>技术技能</h2>
+        <h2>🛠 技术技能</h2>
         <ul>
-            <li>编程语言：C/C++、Java、Python</li>
-            <li>专业基础：数据结构、操作系统、计算机网络、数据库</li>
-            <li>技术能力：具备数据处理与模型训练基础</li>
+            <li>C/C++、Java、Python</li>
+            <li>数据结构、操作系统、计算机网络</li>
+            <li>数据处理与模型训练</li>
         </ul>
     </section>
 
     <section class="card">
-        <h2>科研成果</h2>
+        <h2>🏆 科研成果</h2>
         <ul>
-            <li>IEEE论文（阿尔茨海默症诊断方向，2025）</li>
+            <li>IEEE论文（2025）</li>
             <li>软件著作权：《阿尔茨海默症诊断系统》</li>
         </ul>
     </section>
 
     <section class="card contact">
-        <h2>联系方式</h2>
-        <p>📞 电话：18015797268</p>
-        <p>📧 邮箱：m18015797268@163.com</p>
+        <h2>📞 联系方式</h2>
+        <p>电话：18015797268</p>
+        <p>邮箱：m18015797268@163.com</p>
     </section>
 
 </body>

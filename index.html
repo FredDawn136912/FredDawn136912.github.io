@@ -1,54 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>王俊杰 - 个人主页</title>
+
     <style>
-        body { font-family: Arial; max-width: 800px; margin: auto; line-height: 1.6; }
-        h1 { color: #333; }
-        section { margin-bottom: 30px; }
+        body {
+            font-family: "Segoe UI", Arial;
+            background-color: #f5f7fa;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #2c7be5;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .contact p {
+            margin: 5px 0;
+        }
     </style>
 </head>
+
 <body>
 
-<h1>王俊杰</h1>
-<p>计算机科学与技术本科生｜AI / 软件开发方向</p>
+    <h1>王俊杰</h1>
+    <p class="subtitle">计算机科学与技术本科生 ｜ AI / 软件开发方向</p>
 
-<section>
-<h2>关于我</h2>
-<p>具备扎实的计算机基础与编程能力，参与医疗AI项目与科研工作，熟悉数据处理与模型训练流程。</p>
-</section>
+    <section class="card">
+        <h2>关于我</h2>
+        <p>
+            具备扎实的计算机基础与编程能力，参与医疗AI项目与科研工作，
+            熟悉数据处理与模型训练流程，具备良好的问题分析与执行能力。
+        </p>
+    </section>
 
-<section>
-<h2>项目经历</h2>
-<ul>
-<li>医学影像数据清洗与增强处理</li>
-<li>RDAN-ResNet模型优化与调参</li>
-<li>10折交叉验证评估模型性能</li>
-</ul>
-</section>
+    <section class="card">
+        <h2>项目经历</h2>
+        <ul>
+            <li>完成医学影像数据清洗与标准化处理，采用数据增强方法扩充数据规模</li>
+            <li>参与RDAN-ResNet模型构建与参数调优，提升模型训练稳定性</li>
+            <li>设计10折交叉验证，对模型性能进行评估并输出分析报告</li>
+        </ul>
+    </section>
 
-<section>
-<h2>实习经历</h2>
-<p>农业银行｜网络安全岗</p>
-<ul>
-<li>参与网络安全监控与日志分析</li>
-<li>协助安全巡检与事件响应</li>
-</ul>
-</section>
+    <section class="card">
+        <h2>实习经历</h2>
+        <p><strong>中国农业银行｜网络安全岗</strong></p>
+        <ul>
+            <li>参与网络安全设备监控与异常日志分析</li>
+            <li>协助开展安全巡检与基础事件响应</li>
+        </ul>
 
-<section>
-<h2>技能</h2>
-<ul>
-<li>C/C++、Java、Python</li>
-<li>数据结构、操作系统、计算机网络</li>
-</ul>
-</section>
+        <p><strong>中国农业银行｜大堂经理</strong></p>
+        <ul>
+            <li>参与网点客户分流与业务引导，保障业务流程顺畅运行</li>
+            <li>了解银行基层业务流程及岗位协作机制</li>
+        </ul>
+    </section>
 
-<section>
-<h2>联系方式</h2>
-<p>电话：18015797268</p>
-<p>邮箱：m18015797268@163.com</p>
-</section>
+    <section class="card">
+        <h2>技术技能</h2>
+        <ul>
+            <li>编程语言：C/C++、Java、Python</li>
+            <li>专业基础：数据结构、操作系统、计算机网络、数据库</li>
+            <li>技术能力：具备数据处理与模型训练基础</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>科研成果</h2>
+        <ul>
+            <li>IEEE论文（阿尔茨海默症诊断方向，2025）</li>
+            <li>软件著作权：《阿尔茨海默症诊断系统》</li>
+        </ul>
+    </section>
+
+    <section class="card contact">
+        <h2>联系方式</h2>
+        <p>📞 电话：18015797268</p>
+        <p>📧 邮箱：m18015797268@163.com</p>
+    </section>
 
 </body>
 </html>
